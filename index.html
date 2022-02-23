@@ -11,26 +11,31 @@
     <div class="container">
         <div class="header">
             <h1 class="heading">Drag and Drop</h1>
+            <p>Right click to delete, Double click to rename and Click to change the color of list item. You can also add new item.</p>
         </div>
         <div class="input">
             <input type="text" id="input">
             <input type="button" value="Add List" id="button" class="button">
-            <input type="button" value="Update List" class="button" id="update" disabled>
+            <!-- <input type="button" value="Update List" class="button" id="update" disabled> -->
         </div>
         <div class="lists">
-            <div class="list main-list">
+            <div class="list main-list" id="addlistitem">
+                <span class="task"></span>
                 <div class="list-item" draggable="true">List item 1</div>
                 <div class="list-item" draggable="true">List item 2</div>
             </div>
             <div class="list">
+                <span class="task"></span>
                 <div class="list-item" draggable="true">List item 3</div>
                 <div class="list-item" draggable="true">List item 4</div>
             </div>
             <div class="list">
+                <span class="task"></span>
                 <div class="list-item" draggable="true">List item 5</div>
                 <div class="list-item" draggable="true">List item 6</div>
             </div>
             <div class="list">
+                <span class="task"></span>
                 <div class="list-item" draggable="true">List item 7</div>
                 <div class="list-item" draggable="true">List item 8</div>
             </div>
