@@ -1,0 +1,129 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Yrsa:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: #00ffc8;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Yrsa', serif;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.heading{
+    width: 100%;
+    margin: 15px;
+}
+#input{
+    height: 35px;
+    width: 200px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-family: inherit;
+    font-size: 1.1rem;
+}
+
+#input:focus{
+    border-bottom: 3px solid rgb(3, 110, 105) ;
+    outline: none;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin-bottom: 10px;
+}
+
+.button{
+    height: 35px;
+    width: 100px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #43a791;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button:hover{
+    background-color: rgb(3, 110, 105);
+}
+
+.button:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.lists{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    height: 75%;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.list{
+    width: 200px;
+    height: 72vh;
+    margin: 20px;
+    background-color: #43a791;
+    border-radius: 10px;
+}
+
+.list-item{
+    height: 35px;
+    font-size: 1.1rem;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* color: lightgreen; */
+}
+
+@media screen and (max-width:550px) {
+    .list-item{
+        height: 45px;
+        font-size: 0.8rem;
+        background-color: #fff;
+        border-radius: 20px;
+        margin: 8px;
+    }
+    .list{
+        height: 65vh;
+        margin: 5px;
+    }
+
+    .lists{
+        margin-top: 10px;
+    }
+
+    .input{
+        flex-direction: column;
+    }
+}
