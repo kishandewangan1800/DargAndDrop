@@ -10,7 +10,7 @@ const lists = document.querySelector(".lists");
 lists.addEventListener("contextmenu",(e)=>{
     e.preventDefault();
     if(e.target.classList.contains('list-item')){
-        let flag = confirm("Want to delete List ?")
+        let flag = confirm("Want to delete List-item?")
             if (flag) {
                 e.target.remove();
             }
@@ -20,7 +20,7 @@ lists.addEventListener("contextmenu",(e)=>{
 lists.addEventListener("dblclick",(e)=>{
     e.preventDefault();
     if(e.target.classList.contains('list-item')){
-        let name = prompt("Enter Name")
+        let name = prompt("Enter New Name")
             if (name) {
                 e.target.innerHTML = name;
             }
@@ -39,7 +39,7 @@ input.addEventListener("keydown", (e) => {
 
 button.addEventListener("click", () => {
     if (input.value === "") {
-        alert("Enter List Name")
+        alert("Enter List-item Name")
     } else {
         const div = document.createElement("div");
         div.classList.add("list-item");
